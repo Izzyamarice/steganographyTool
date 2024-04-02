@@ -14,7 +14,7 @@
    <cursorShape>ArrowCursor</cursorShape>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Stego</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTabWidget" name="tabWidget">
@@ -37,7 +37,7 @@
       <cursorShape>OpenHandCursor</cursorShape>
      </property>
      <attribute name="title">
-      <string>Tab 1</string>
+      <string>Encrypt</string>
      </attribute>
      <widget class="QTextEdit" name="textEdit">
       <property name="geometry">
@@ -56,16 +56,6 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Enter message..&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
-     <widget class="QGraphicsView" name="graphicsView">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>140</y>
-        <width>256</width>
-        <height>221</height>
-       </rect>
-      </property>
-     </widget>
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
@@ -82,7 +72,7 @@ p, li { white-space: pre-wrap; }
        <string>Save</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="fileChooserTab1">
       <property name="geometry">
        <rect>
         <x>560</x>
@@ -98,22 +88,25 @@ p, li { white-space: pre-wrap; }
        <string>Choose file..</string>
       </property>
      </widget>
+     <widget class="QLabel" name="imageTab1">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>160</y>
+        <width>381</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="Decrypt">
      <attribute name="title">
-      <string>Tab 2</string>
+      <string>Decrypt</string>
      </attribute>
-     <widget class="QGraphicsView" name="graphicsView_2">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>60</y>
-        <width>256</width>
-        <height>221</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="fileChooserTab2">
       <property name="geometry">
        <rect>
         <x>40</x>
@@ -146,6 +139,19 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="alignment">
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="imageTab2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>60</y>
+        <width>281</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </widget>
