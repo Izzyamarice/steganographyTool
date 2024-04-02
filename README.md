@@ -8,5 +8,6 @@ Alternatively, the user can supply a picture that already has a message inside a
 # Currently to do:
 - Need to create a stylesheet for the gui - text and the elements
 - Need to create/edit the python logic
+- Need to make the loaded images resize in the application
 - Need to link the python with the gui - add actions for the gui elements
 - Need to link the python with the gui - add methods to correlate with the actions
