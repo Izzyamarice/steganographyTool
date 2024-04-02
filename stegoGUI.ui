@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Stego</class>
+ <widget class="QMainWindow" name="Stego">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -9,6 +9,9 @@
     <width>773</width>
     <height>567</height>
    </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -59,7 +62,7 @@ p, li { white-space: pre-wrap; }
         <x>140</x>
         <y>140</y>
         <width>256</width>
-        <height>192</height>
+        <height>221</height>
        </rect>
       </property>
      </widget>
@@ -72,6 +75,9 @@ p, li { white-space: pre-wrap; }
         <height>23</height>
        </rect>
       </property>
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
       <property name="text">
        <string>Save</string>
       </property>
@@ -81,9 +87,12 @@ p, li { white-space: pre-wrap; }
        <rect>
         <x>560</x>
         <y>60</y>
-        <width>75</width>
+        <width>101</width>
         <height>23</height>
        </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
       </property>
       <property name="text">
        <string>Choose file..</string>
@@ -100,7 +109,7 @@ p, li { white-space: pre-wrap; }
         <x>40</x>
         <y>60</y>
         <width>256</width>
-        <height>192</height>
+        <height>221</height>
        </rect>
       </property>
      </widget>
@@ -109,9 +118,12 @@ p, li { white-space: pre-wrap; }
        <rect>
         <x>40</x>
         <y>20</y>
-        <width>75</width>
+        <width>101</width>
         <height>23</height>
        </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
       </property>
       <property name="text">
        <string>Choose file..</string>
