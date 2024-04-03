@@ -11,3 +11,4 @@ Alternatively, the user can supply a picture that already has a message inside a
 - Need to make the loaded images resize in the application
 - Need to link the python with the gui - add actions for the gui elements
 - Need to link the python with the gui - add methods to correlate with the actions
+- Need to set the current print statements in the stegoExecution to be gui alerts rather than print statements
