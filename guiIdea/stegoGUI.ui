@@ -160,7 +160,7 @@ p, li { white-space: pre-wrap; }
        <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="decryptedText">
       <property name="geometry">
        <rect>
         <x>360</x>

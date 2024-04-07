@@ -78,26 +78,27 @@ class StegoExecution():
         delim = "$ENDOFMESSAGE$"
         if delim in self._message:
             self._message = self._message.split("$ENDOFMESSAGE$")[0]
-            print("message is:", self._message)
+            return self._message
         else:
-            print("could not find a message.....")
+            return None
 
 
-def decode():
+def decode(imgPath):
     file = StegoExecution()
-    image = input("Enter the image name to use:")
     #sets all the details for their chosen message and then decodes it
-    file.setImgDetails(image)
+    file.setImgDetails(imgPath)
     file.decodeImage()
     #decodes the message into ascii
     file.decodeMessage()
     #attempts to find the delimiter in the output and removes everything after this
-    file.getMessage()
+    message = file.getMessage()
+    return message
 
 def encode(imgPath,msg):
     file = StegoExecution()
     #sets the user message
     message = msg + "$ENDOFMESSAGE$"
+    print(message)
     #set the message inside the object variable and convert to binary
     file.setMessage(message)
     #check if the message = the delimiter

@@ -31,8 +31,11 @@ class stego(QtWidgets.QMainWindow, stegoGUI.Ui_Stego):
             self.imageTab1.setPixmap(QPixmap(fname[0]))
             self._fileTab1 = fname[0]
         else:
+            #If we are setting it to the second tab then we should try to decode the image
+            #Immediately when the image loads
             self.imageTab2.setPixmap(QPixmap(fname[0]))
-            self._fileTab = fname[0]
+            self._fileTab2 = fname[0]
+            self.loadEncryptedFile()
         
     #Returns the file that the user has selected
     def getFile(self):
@@ -41,6 +44,17 @@ class stego(QtWidgets.QMainWindow, stegoGUI.Ui_Stego):
     #Initiates the saving of the encrypted file
     def saveEncryptedFile(self):
         self.encryptImage()
+        #the file gets saved automatically in the stegoExecution file, so no need to do it here
+
+    #Loads the encrypted message for the picture in tab 2
+    def loadEncryptedFile(self):
+        message = self.decryptImage()
+        if(message != None):
+            #we will put the messasge in the label
+            self.decryptedText.setText(message)
+        else:
+            #we will put "No message found in the supplied image"
+            self.decryptedText.setText("No message found in the supplied image")
 
     #Encrypts the selected image by calling the stego file
     def encryptImage(self):
@@ -52,9 +66,7 @@ class stego(QtWidgets.QMainWindow, stegoGUI.Ui_Stego):
 
     #Decrypts the selected image by calling the stego file
     def decryptImage(self):
-        se.decode(self._fileTab2)
-
-        
+        return se.decode(self._fileTab2)
 
 
 def main():
