@@ -26,6 +26,13 @@
       <height>431</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
@@ -133,8 +140,8 @@ p, li { white-space: pre-wrap; }
        <rect>
         <x>360</x>
         <y>60</y>
-        <width>121</width>
-        <height>21</height>
+        <width>221</width>
+        <height>241</height>
        </rect>
       </property>
       <property name="cursor">
@@ -181,12 +188,12 @@ p, li { white-space: pre-wrap; }
      </widget>
     </widget>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="Title">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>100</x>
       <y>20</y>
-      <width>41</width>
+      <width>541</width>
       <height>41</height>
      </rect>
     </property>
@@ -194,7 +201,7 @@ p, li { white-space: pre-wrap; }
      <string>Stego</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>

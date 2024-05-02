@@ -4,6 +4,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication,QFileDialog
 from PyQt5.QtGui import QPixmap, QImage
+from PyQt5.QtCore import QFile
 import sys
 import stegoGUI
 import stegoExecution as se
@@ -68,12 +69,14 @@ class stego(QtWidgets.QMainWindow, stegoGUI.Ui_Stego):
     def decryptImage(self):
         return se.decode(self._fileTab2)
 
-def settingStyle(app):
-    app.setStyleSheet("QMainWindow { background-color: purple }")
 
 def main():
     app = QApplication(sys.argv)
-    settingStyle(app)
+    file = QFile("styling.qss")
+    file.open(QFile.ReadOnly)
+    stylesheet = file.readAll().data().decode('utf-8')
+    file.close()
+    app.setStyleSheet(stylesheet)
     form = stego()
     form.show()
     app.exec_()

@@ -1,0 +1,19 @@
+/*
+Only the Main window and the title label work
+*/
+
+QMainWindow{
+    background-color: #C19CD1;
+}
+QMenu{
+    background-color: #C19CD1;
+}
+
+#Title{
+    color: #736A76;
+    font: bold 30px;
+}
+
+QTabWidget{
+    background-color: #C19CD1;
+}
