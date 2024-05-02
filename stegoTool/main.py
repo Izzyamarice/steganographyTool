@@ -68,9 +68,12 @@ class stego(QtWidgets.QMainWindow, stegoGUI.Ui_Stego):
     def decryptImage(self):
         return se.decode(self._fileTab2)
 
+def settingStyle(app):
+    app.setStyleSheet("QMainWindow { background-color: purple }")
 
 def main():
     app = QApplication(sys.argv)
+    settingStyle(app)
     form = stego()
     form.show()
     app.exec_()
