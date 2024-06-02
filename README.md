@@ -6,7 +6,6 @@ Alternatively, the user can supply a picture that already has a message inside a
 
 
 # Currently to do:
-- Need to make the loaded images resize in the application
 - Need to set the current print statements in the stegoExecution and main file to be gui alerts rather than print statements
 - Need a popup/alert that says image has been created when we encode it
 - Need to make sure it can handle creating a new file when the file name already exists
