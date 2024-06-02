@@ -4,7 +4,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication,QFileDialog
 from PyQt5.QtGui import QPixmap, QImage
-from PyQt5.QtCore import QFile
+from PyQt5.QtCore import QFile, Qt
 import sys
 import stegoGUI
 import stegoExecution as se
@@ -29,14 +29,19 @@ class stego(QtWidgets.QMainWindow, stegoGUI.Ui_Stego):
     def fileChooser(self,tab):
         fname = self.getFile()
         if(tab == 1):
-            self.imageTab1.setPixmap(QPixmap(fname[0]))
+            image = QPixmap(fname[0])
+            scaled_image = image.scaled(self.imageTab1.width(), self.imageTab1.height(), Qt.KeepAspectRatio)
+            self.imageTab1.setPixmap(scaled_image)
             self._fileTab1 = fname[0]
         else:
             #If we are setting it to the second tab then we should try to decode the image
             #Immediately when the image loads
-            self.imageTab2.setPixmap(QPixmap(fname[0]))
+            image = QPixmap(fname[0])
+            scaled_image = image.scaled(self.imageTab2.width(), self.imageTab2.height(), Qt.KeepAspectRatio)
+            self.imageTab2.setPixmap(scaled_image)
             self._fileTab2 = fname[0]
             self.loadEncryptedFile()
+
         
     #Returns the file that the user has selected
     def getFile(self):
