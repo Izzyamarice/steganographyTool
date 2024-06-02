@@ -7,9 +7,9 @@ Alternatively, the user can supply a picture that already has a message inside a
 
 # Currently to do:
 - Need to set the current print statements in the stegoExecution and main file to be gui alerts rather than print statements
+- Error handling in regards to if there are errors in the binary and message conversions - also require alerts
 - Need a popup/alert that says image has been created when we encode it
-- Need to make sure it can handle creating a new file when the file name already exists
-
+- Need to make sure it can handle creating a new file when the file name already exists, keep adding a 1 etc to the name perhaps, e.g. file, file1, file2, file3
 # The images below represent the application's current state
 ![image](https://github.com/Izzyamarice/steganographyTool/assets/80723693/cd3ae180-3aee-43c5-af09-cc39e7881f75)
 ![image](https://github.com/Izzyamarice/steganographyTool/assets/80723693/4d84c715-1a51-492c-aac0-c1c3a10c2181)
